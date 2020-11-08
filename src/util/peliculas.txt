@@ -1,0 +1,3 @@
+motor.assertString("(Pelicula(name \"1917\") (genero \"Acción\") (formato \"Tradicional\") (duracion \"Larga\")(released_year 2019) (mood_movie \"neutral\") (pertenece_tipo 1))");
+motor.assertString("(Pelicula(name \"RAMBO\") (genero \"Acción\") (formato \"Tradicional\") (duracion \"Larga\")(released_year 1000) (mood_movie \"neutral\") (pertenece_tipo 1))");
+motor.assertString("(Pelicula(name \"1917\") (genero \"Amor\") (formato \"Animada\") (duracion \"Larga\")(released_year 100) (mood_movie \"neutral\") (pertenece_tipo 1))");
