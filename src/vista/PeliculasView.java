@@ -4,7 +4,11 @@ import clases.User;
 import clases.Tipos;
 import java.awt.Color;
 import java.awt.Font;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -310,6 +314,25 @@ public class PeliculasView extends javax.swing.JFrame {
             try {
                 motor.setTipoPelicula(tipo, user);
                 motor.ejecutar();
+                
+                //--------MODIFICO EL STRING DEL TEXTAREA
+               if(txt_Result.getText().contains("No se han encontrado peliculas")){ //si tiene el campo ese
+                    if(txt_Result.getText().contains("PELICULA")){  //si dentro del string sale pelicula le borro el no se han..
+                        txt_Result.setText(txt_Result.getText().replace("No se han encontrado peliculas",""));
+                    }else{
+                        txt_Result.setText("No se han encontrado peliculas.\n"); //sino tiene PELICULAS,muestro una vez
+                    }
+                }
+                
+                //--------CREO EL TXT CON LOS DATOS
+                   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");  
+                   LocalDateTime now = LocalDateTime.now();
+                    BufferedWriter writer = new BufferedWriter (new FileWriter ("./src/respuestas/results.txt", true) );
+                    writer.append("********************************\nUSUARIO: "+ user_name + "\n" +
+                            txt_Result.getText() +"FECHA: "+dtf.format(now));
+                    writer.write(System.getProperty("line.separator"));
+                    writer.close();
+                //System.out.println(txt_Result.getText());
             } catch (IOException ex) {
                 Logger.getLogger(PeliculasView.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -343,6 +366,24 @@ public class PeliculasView extends javax.swing.JFrame {
              try {
                 motor.setTipoPelicula(tipo, user);//mando los dos objetos
                 motor.ejecutar();//ejecuto
+                
+                     //--------MODIFICO EL STRING DEL TEXTAREA
+                   if(txt_Result.getText().contains("No se han encontrado peliculas")){ //si tiene el campo ese
+                    if(txt_Result.getText().contains("PELICULA")){  //si dentro del string sale pelicula le borro el no se han..
+                        txt_Result.setText(txt_Result.getText().replace("No se han encontrado peliculas",""));
+                    }else{
+                        txt_Result.setText("No se han encontrado peliculas.\n"); //sino tiene PELICULAS,muestro una vez
+                    }
+                }
+                   
+                //CREO EL TXT CON LOS DATOS
+                   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");  
+                   LocalDateTime now = LocalDateTime.now();
+                    BufferedWriter writer = new BufferedWriter (new FileWriter ("./src/respuestas/results.txt", true) );
+                    writer.append("********************************\nUSUARIO: "+ user_name + "\n" +
+                        txt_Result.getText() +"FECHA: "+dtf.format(now));
+                    writer.write(System.getProperty("line.separator"));
+                    writer.close();
             } catch (IOException ex) {
                 Logger.getLogger(PeliculasView.class.getName()).log(Level.SEVERE, null, ex);
             }

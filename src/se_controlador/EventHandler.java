@@ -17,35 +17,28 @@ public class EventHandler implements JessListener {
     @Override
     public void eventHappened(JessEvent je){
         
-       /* int type = je.getType();  //que tipo de evento esta surgiendo
+        /*int type = je.getType();  //que tipo de evento esta surgiendo
         Rete rete = (Rete)je.getSource();
         Context context = je.getContext(); //en que motor esta definido la variable
         Helper helper = new Helper(rete);
         
-         if(type == JessEvent.DEFRULE_FIRED){
-           Fact respuesta = helper.findFactByTempleteName("MAIN::moviesResult"); //busco el template 
-            if (respuesta != null){
-               String slotV;
-               
-               Fact nodo = null;
-               try {
-                   slotV = respuesta.get(0).toString();
-                   System.out.println("CHAU: "+slotV);
-                   nodo = helper.findFactByTemplateName("MAIN::Respuesta", "tipo_pelicula", slotV); //busco alguna respuesta con ese slot y el valor
-                   System.out.println("KE: " + nodo);
-                   if(nodo != null){
-                       String res = nodo.getSlotValue("movie_name").stringValue(context);
-                       vista.showResult("PELICULA ELEGIDA----- " + res);
-                   }
-               } catch (JessException ex) {
-                   Logger.getLogger(EventHandler.class.getName()).log(Level.SEVERE, null, ex);
-               }
+        if(type == JessEvent.DEFRULE_FIRED){
+            Fact respuesta = helper.findFactByTempleteName("MAIN::respuesta");
 
-              // res = res + "\n-------\n" ;
-                //System.out.println("PROBANDO UNO DOS TRES: "+ res);
-                //vista.showResult(res);
+            if (respuesta == null)
+            {
+                vista.showResult("No consigo una solución en base a las caracteristicas mencionadas");  
             }
-            
-        }      */
+            else  if(respuesta != null){                           
+                try {
+                     String res = respuesta.get(0).toString();
+                     //res = res + respuesta.get(1).toString();
+
+                    vista.showResult(res);
+                    } catch (JessException e) {
+                        System.out.println("Error: "+ e);
+                       }
+            }
+        }          */
     }
 }

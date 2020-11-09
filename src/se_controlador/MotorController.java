@@ -38,6 +38,7 @@ public class MotorController {
     
       public void setTipoPelicula(Tipos tipo, User user) throws IOException{
          try {
+             
              motor.add(tipo);//agrego los datos de la clase tipo
              motor.add(user);//agrego los datos de user *es solo el nombre
         } catch (JessException e) {
@@ -45,7 +46,7 @@ public class MotorController {
         }
     }
     
-   /* public void addEscuchador(EventHandler eventController){
+  /*  public void addEscuchador(EventHandler eventController){
         motor.addJessListener(eventController);
         motor.setEventMask(JessEvent.DEFRULE_FIRED);
     }*/

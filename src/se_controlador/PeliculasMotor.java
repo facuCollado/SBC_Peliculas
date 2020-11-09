@@ -12,7 +12,7 @@ public class PeliculasMotor {
         
 
         //EventHandler eventController = new EventHandler(view);
-        //motorController.addEscuchador(eventController); 
+        //otorController.addEscuchador(eventController); 
        
             
     }

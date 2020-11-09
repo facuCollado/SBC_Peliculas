@@ -1,4 +1,4 @@
-(Pelicula (name "1917") (genero "Acción") (formato "Tradicional") (duracion "Larga") (released_year 2019) (mood_movie "neutral") (pertenece_tipo 1))
-(Pelicula (name "Rambo") (genero "Acción") (formato "Tradicional") (duracion "Larga") (released_year 1000) (mood_movie "neutral") (pertenece_tipo 1))
-(Pelicula (name "Terminator") (genero "Acción") (formato "Tradicional") (duracion "Larga") (released_year 1999) (mood_movie "neutral") (pertenece_tipo 1))
-(Pelicula (name "Titanic") (genero "Amor") (formato "Animada") (duracion "Larga") (released_year 1998) (mood_movie "triste") (pertenece_tipo 2))
+(Pelicula (name "1917") (genero "Acción") (formato "Tradicional") (duracion "Larga") (released_year 2019) (mood_movie "Neutral") (pertenece_tipo 1))
+(Pelicula (name "Rambo: First Blood") (genero "Acción") (formato "Tradicional") (duracion "Larga") (released_year 1982) (mood_movie "Neutral") (pertenece_tipo 1))
+(Pelicula (name "Terminator 1") (genero "Acción") (formato "Tradicional") (duracion "Larga") (released_year 1984) (mood_movie "Neutral") (pertenece_tipo 1))
+(Pelicula (name "Titanic") (genero "Amor") (formato "Tradicional") (duracion "Larga") (released_year 1997) (mood_movie "Triste") (pertenece_tipo 2))

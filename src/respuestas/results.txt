@@ -1,0 +1,41 @@
+********************************
+USUARIO: as
+No se han encontrado peliculas.
+FECHA: 09/11/2020 03:15:55
+********************************
+USUARIO: as
+No se han encontrado peliculas.
+FECHA: 09/11/2020 03:15:57
+********************************
+USUARIO: as
+No se han encontrado peliculas.
+FECHA: 09/11/2020 03:15:59
+********************************
+USUARIO: as
+PELICULA: Titanic
+GENERO: Amor
+DURACION: Larga
+AÑO DE ESTRENO: 1997
+ESTADO DE ANIMO: Triste
+
+
+
+FECHA: 09/11/2020 03:16:01
+********************************
+USUARIO: pp4x
+PELICULA: Terminator 1
+GENERO: Acción
+DURACION: Larga
+AÑO DE ESTRENO: 1984
+ESTADO DE ANIMO: Neutral
+PELICULA: Rambo: First Blood
+GENERO: Acción
+DURACION: Larga
+AÑO DE ESTRENO: 1982
+ESTADO DE ANIMO: Neutral
+PELICULA: 1917
+GENERO: Acción
+DURACION: Larga
+AÑO DE ESTRENO: 2019
+ESTADO DE ANIMO: Neutral
+FECHA: 09/11/2020 03:16:37

@@ -4,4 +4,5 @@
 (slot genero)
 (slot duracion)
 (slot mood)
+(slot movie_year)
 (slot fecha) )
