@@ -16,7 +16,7 @@
      (eq ?tipo_duracion ?duracion) ))
 =>
 (assert (Respuesta (user ?user) (movie_name ?name) (genero ?genero)
-    (duracion ?duracion) (mood ?mood_movie) (movie_year ?released_year) (fecha "FECHA")))
+    (duracion ?duracion) (mood ?mood_movie) (movie_year ?released_year)))
 )
 
 (defrule compararMood
@@ -27,19 +27,18 @@
 (test (and (= ?tipo_mood ?mood_movie) (= ?tipo_formato ?formato)))
 =>
 (assert (Respuesta (user ?user) (movie_name ?name) (genero ?genero)
-    (duracion ?duracion) (mood ?tipo_mood) (movie_year ?released_year) (fecha "FECHA")))
+    (duracion ?duracion) (mood ?tipo_mood) (movie_year ?released_year)))
 )
 
 (defrule showResult
 (Respuesta (user ?user) (movie_name ?movie_name) (genero ?genero) (duracion ?duracion)
-    (mood ?mood) (movie_year ?movie_year) (fecha ?fecha))
+    (mood ?mood) (movie_year ?movie_year))
 =>
-(printout t "PELICULA: " ?movie_name crlf "GENERO: " ?genero crlf)
-(printout t "DURACION: " ?duracion crlf "AÑO DE ESTRENO: " ?movie_year crlf "ESTADO DE ANIMO: " ?mood crlf)
-;(assert (moviesResult ?tipo_pelicula))
+(printout t "---PELICULA: " ?movie_name crlf "-GENERO: " ?genero crlf)
+(printout t "-DURACION: " ?duracion crlf "-AÑO DE ESTRENO: " ?movie_year crlf "-ESTADO DE ANIMO: " ?mood crlf)
 )
 
-(defrule no-data-genero
+(defrule no-data
 (Pelicula (name ?name) (genero ?genero) (formato ?formato) (duracion ?duracion) (released_year ?released_year)
     (mood_movie ?mood_movie) (pertenece_tipo ?pertenece_tipo) )
 (Tipos (tipo_genero ?tipo_genero) (tipo_formato ?tipo_formato) (tipo_duracion ?tipo_duracion) (tipo_mood ?tipo_mood))
@@ -48,5 +47,5 @@
 (test(not(eq ?tipo_formato ?formato)))
 (test(not(eq ?tipo_duracion ?duracion)))
 =>
-(printout t "No se han encontrado peliculas" crlf)
+(printout t "No se han encontrado peliculas")
 )

@@ -1,41 +1,90 @@
 ********************************
-USUARIO: as
-No se han encontrado peliculas.
-FECHA: 09/11/2020 03:15:55
-********************************
-USUARIO: as
-No se han encontrado peliculas.
-FECHA: 09/11/2020 03:15:57
-********************************
-USUARIO: as
-No se han encontrado peliculas.
-FECHA: 09/11/2020 03:15:59
-********************************
-USUARIO: as
-PELICULA: Titanic
-GENERO: Amor
-DURACION: Larga
-AÑO DE ESTRENO: 1997
-ESTADO DE ANIMO: Triste
+FECHA: 09/11/2020 22:44:26
+FROM THE QUERY: (mood_movie: Triste -- formato: Animada)
+-----USUARIO: as2
+---PELICULA: Dumbo
+-GENERO: Amor
+-DURACION: Media
+-AÑO DE ESTRENO: 1941
+-ESTADO DE ANIMO: Triste
+---PELICULA: Bambi
+-GENERO: Amor
+-DURACION: Media
+-AÑO DE ESTRENO: 1942
+-ESTADO DE ANIMO: Triste
+---PELICULA: Un gran dinosaurio
+-GENERO: Amor
+-DURACION: Larga
+-AÑO DE ESTRENO: 2015
+-ESTADO DE ANIMO: Triste
 
-
-
-FECHA: 09/11/2020 03:16:01
 ********************************
-USUARIO: pp4x
-PELICULA: Terminator 1
-GENERO: Acción
-DURACION: Larga
-AÑO DE ESTRENO: 1984
-ESTADO DE ANIMO: Neutral
-PELICULA: Rambo: First Blood
-GENERO: Acción
-DURACION: Larga
-AÑO DE ESTRENO: 1982
-ESTADO DE ANIMO: Neutral
-PELICULA: 1917
-GENERO: Acción
-DURACION: Larga
-AÑO DE ESTRENO: 2019
-ESTADO DE ANIMO: Neutral
-FECHA: 09/11/2020 03:16:37
+FECHA: 09/11/2020 22:44:37
+FROM THE QUERY: (genero: Comedia -- formato: Tradicional -- duracion: Larga)
+-----USUARIO: as2
+---PELICULA: Super Agente 86
+-GENERO: Comedia
+-DURACION: Larga
+-AÑO DE ESTRENO: 2008
+-ESTADO DE ANIMO: Neutral
+---PELICULA: Paul
+-GENERO: Comedia
+-DURACION: Larga
+-AÑO DE ESTRENO: 2011
+-ESTADO DE ANIMO: Feliz
+---PELICULA: Un espía y medio
+-GENERO: Comedia
+-DURACION: Larga
+-AÑO DE ESTRENO: 2016
+-ESTADO DE ANIMO: Feliz
+
+********************************
+FECHA: 09/11/2020 22:47:57
+FROM THE QUERY: (mood_movie: Triste -- formato: Animada)
+-----USUARIO: zas
+---PELICULA: Dumbo
+-GENERO: Amor
+-DURACION: Media
+-AÑO DE ESTRENO: 1941
+-ESTADO DE ANIMO: Triste
+---PELICULA: Bambi
+-GENERO: Amor
+-DURACION: Media
+-AÑO DE ESTRENO: 1942
+-ESTADO DE ANIMO: Triste
+---PELICULA: Un gran dinosaurio
+-GENERO: Amor
+-DURACION: Larga
+-AÑO DE ESTRENO: 2015
+-ESTADO DE ANIMO: Triste
+
+********************************
+FECHA: 09/11/2020 22:48:18
+FROM THE QUERY: (genero: Comedia -- formato: Animada -- duracion: Larga)
+-----USUARIO: ae
+---PELICULA: Onward
+-GENERO: Comedia
+-DURACION: Larga
+-AÑO DE ESTRENO: 2020
+-ESTADO DE ANIMO: Neutral
+---PELICULA: Metegol
+-GENERO: Comedia
+-DURACION: Larga
+-AÑO DE ESTRENO: 2013
+-ESTADO DE ANIMO: Neutral
+
+********************************
+FECHA: 09/11/2020 22:48:34
+FROM THE QUERY: (genero: Comedia -- formato: LiveAction -- duracion: Media)
+-----USUARIO: ae
+---PELICULA: Los Picapiedra
+-GENERO: Comedia
+-DURACION: Media
+-AÑO DE ESTRENO: 1994
+-ESTADO DE ANIMO: Neutral
+
+********************************
+FECHA: 09/11/2020 22:48:55
+FROM THE QUERY: (genero: Comedia -- formato: Tradicional -- duracion: Media)
+-----USUARIO: ae
+No se han encontrado peliculas.
